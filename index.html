@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRON Legacy Pong</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="splash-screen">
+        <div class="grid-effect"></div>
+        <div class="content">
+            <h1 class="neon-text">PONG</h1>
+            <div class="instructions">
+                <div class="player-card">
+                    <h2 class="neon-text-blue">PLAYER 1</h2>
+                    <p class="glow-text">Controls: W/S keys</p>
+                </div>
+                <div class="player-card">
+                    <h2 class="neon-text-blue">PLAYER 2</h2>
+                    <p class="glow-text">Controls: ↑/↓ arrows</p>
+                </div>
+            </div>
+            <button id="start-button" class="neon-button">INITIALIZE GAME</button>
+        </div>
+    </div>
+    
+    <canvas id="gameCanvas"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>

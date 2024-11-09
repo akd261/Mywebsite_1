@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Orbitron', sans-serif;
+    background-image: linear-gradient(0deg, transparent 24%, rgba(32, 105, 152, 0.1) 25%, rgba(32, 105, 152, 0.1) 26%, transparent 27%, transparent 74%, rgba(32, 105, 152, 0.1) 75%, rgba(32, 105, 152, 0.1) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(32, 105, 152, 0.1) 25%, rgba(32, 105, 152, 0.1) 26%, transparent 27%, transparent 74%, rgba(32, 105, 152, 0.1) 75%, rgba(32, 105, 152, 0.1) 76%, transparent 77%, transparent);
+    background-size: 50px 50px;
+}
+
+#gameCanvas {
+    border: 4px solid #00f3ff;
+    box-shadow: 0 0 20px #00f3ff;
+    display: none;
+}
+
+#splash-screen {
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #00f3ff;
+    box-shadow: 0 0 30px rgba(0, 243, 255, 0.5);
+}
+
+h1 {
+    font-size: 4em;
+    margin-bottom: 40px;
+    animation: neonFlicker 1.5s infinite alternate;
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #00f3ff, 0 0 30px #00f3ff, 0 0 40px #00f3ff;
+}
+
+@keyframes neonFlicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #00f3ff, 0 0 30px #00f3ff, 0 0 40px #00f3ff;
+    }
+    20%, 22%, 24%, 55% {
+        text-shadow: none;
+    }
+}
+
+p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #00f3ff;
+    text-shadow: 0 0 5px #00f3ff;
+}
+
+#start-button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    background-color: transparent;
+    border: 2px solid #00f3ff;
+    color: #00f3ff;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 243, 255, 0.5);
+}
+
+#start-button:hover {
+    background-color: #00f3ff;
+    color: #000;
+    box-shadow: 0 0 20px rgba(0, 243, 255, 0.8);
+}
